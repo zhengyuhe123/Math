@@ -103,7 +103,7 @@ class Interval
     /**
      * Join with another interval
      * @param Interval $interval
-     * @return \SPD\Interval
+     * @return \Math\Interval
      */
     public function joinWithAnotherInterval(Interval $interval)
     {
@@ -113,9 +113,9 @@ class Interval
     
     /**
      * Join multiple intervals
-     * @param array[\SPD\Interval] $intervals 
+     * @param array[\Math\Interval] $intervals 
      * @throws \InvalidArgumentException
-     * @return \SPD\Interval
+     * @return \Math\Interval
      */
     public static function join(array $intervals)
     {
@@ -248,7 +248,7 @@ class Interval
     /**
      * get the decimal places interval for value of interval
      * @throws \RuntimeException
-     * @return \SPD\Math\Interval
+     * @return \Math\Interval
      */
     public function getDecimalPlacesIntervalForIntervalValue()
     {
@@ -284,7 +284,7 @@ class Interval
     
     /**get the integer digits interval for value of interval
      * @throws \RuntimeException
-     * @return \SPD\Math\Interval
+     * @return \Math\Interval
      */
     public function getIntegerDigitsIntervalForIntervalValue()
     {
